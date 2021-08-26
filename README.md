@@ -86,12 +86,9 @@ SSH into the control node and follow the steps below:
 - Run the playbook, and navigate to http://[your.VM.IP]:5601/app/kibana to check that the installation worked as expected.
 
 Which file is the playbook? The roles file is the playbook and you copy it to.. Where do you copy it?_
+The roles file is the file where you can find the playbook and it can be copied to /etc/ansible/roles/install-elk.yml.
 
-Which file do you update to make Ansible run the playbook on a specific machine?
-
- You update the hosts file to make the ansible run the playbook.
-How do I specify which machine to install the ELK server on versus which to install Filebeat on? 
-You can specify which machine you want the elk server on by running the proper command within the hosts text file followed by using the IP address, i.e:
+The file you uppdate to make Ansible run the playbook on a specific machine is the hosts file. 
 
 You can also specify the machine to install the elk server on filebeat/metricbeat by installing filebeat/metricbeat configuration file and adjusting the host to the destination IP address. These configuration files can be found by following this path /etc/ansible/filebeat-config.yml or /etc/ansible/metricbeat-config.yml. 
 
