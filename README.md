@@ -76,9 +76,10 @@ This ELK server is configured to monitor the following machines:
 - Web-2 10.0.0.6
 - ELK 10.1.0.5
 We have installed the following Beats on these machines:
-Filebeat and Metricbeat were installed on these two machines via YML playbook within the ansible container.
-These Beats allow us to collect the following information from each machine:
-Metricbeat collects data from the operating system metrics such as CPU, memory, data connected to services running on the server. While filebeat can audit, monitor server logs and collect all other log events within the server. Both utilize powerful tools to monitor traffic and collect data to protect the servers.
+- Filebeat and Metricbeat installed via YML playbook within the ansible container.
+
+These installed files allow us to collect the following information from each machine:
+- Metricbeat collects data from the operating system metrics such as CPU, memory, data connected to services running on the server. While filebeat can audit, monitor server logs and collect all other log events within the server. Both utilize powerful tools to monitor traffic and collect data to protect the servers.
 ### Using the Playbook
 In order to use the playbook, you will need to have an Ansible control node already configured. Assuming you have such a control node provisioned: 
 SSH into the control node and follow the steps below:
