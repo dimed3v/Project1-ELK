@@ -5,9 +5,9 @@ The files in this repository were used to configure the network depicted below.
 Project1-ELK/Diagram/Diagram.png
 
 These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the my-playbook file may be used to install only certain pieces of it, such as Filebeat.
-..* my-playbook.yml 
-..* Filebeat-playbook.yml,
-..* metricbeat-playbook.yml
+..*my-playbook.yml 
+..*Filebeat-playbook.yml,
+..*metricbeat-playbook.yml
 This document contains the following details:
 - Description of the Topology
 - Access Policies
@@ -73,9 +73,9 @@ The following screenshot displays the result of running `docker ps` after succes
 (Images/docker_ps_output.png)
 ### Target Machines & Beats
 This ELK server is configured to monitor the following machines:
-..* Web-1 10.0.0.5 
-..* Web-2 10.0.0.6
-..* ELK 10.1.0.5
+..*Web-1 10.0.0.5 
+..*Web-2 10.0.0.6
+..*ELK 10.1.0.5
 We have installed the following Beats on these machines:
  Filebeat and Metricbeat were installed on these two machines via YML playbook within the ansible container.
 These Beats allow us to collect the following information from each machine:
