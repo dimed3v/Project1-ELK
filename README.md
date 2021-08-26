@@ -41,8 +41,9 @@ The configuration details of each machine may be found below.
 
 
 ### Access Policies
-The machines on the internal network are not exposed to the public Internet. 
-Only the JUMPBOX machine can accept connections from the Internet. Access to this machine is only allowed from the following IP addresses:
+The machines on the internal network are not exposed to the public Internet. Only the JUMPBOX machine can accept connections from the Internet.
+
+Access to this machine is only allowed from the following IP addresses:
 - Personal IP address.
 Machines within the network can only be accessed by SSH.
 The Jumpbox allows access to the ELK VM, with the IP address: 10.0.0.4.
