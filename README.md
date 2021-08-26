@@ -5,15 +5,15 @@ The files in this repository were used to configure the network depicted below.
 Project1-ELK/Diagram/Diagram.png
 
 These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the my-playbook file may be used to install only certain pieces of it, such as Filebeat.
- my-playbook.yml, 
-Filebeat-playbook.yml,
- metricbeat-playbook.yml
+..* my-playbook.yml 
+..* Filebeat-playbook.yml,
+..* metricbeat-playbook.yml
 This document contains the following details:
 - Description of the Topology
 - Access Policies
 - ELK Configuration
- - Beats in Use
- - Machines Being Monitored
+- Beats in Use
+- Machines Being Monitored
 - How to Use the Ansible Build
 
 ### Description of the Topology
@@ -47,7 +47,7 @@ The machines on the internal network are not exposed to the public Internet.
 Only the JUMPBOX machine can accept connections from the Internet. Access to this machine is only allowed from the following IP addresses:
 Personal IP address & 10.0.0.4
 Machines within the network can only be accessed by SSH.
-The Jumobox allows access to the ELK VM, the IP address is 10.0.0.4.
+The Jumobox allows access to the ELK VM, with the IP address  10.0.0.4.
 The JumpBox & 10.0.0.4
 A summary of the access policies in place can be found in the table below.
 | Name   | Publicly Accessible | Allowed IP Addresses |
@@ -55,7 +55,7 @@ A summary of the access policies in place can be found in the table below.
 | Jump Box | No       | 10.0.0.4  |
 | Web-1     |     No     |   10.0.0.5   |
 |  Web-2   |      No     | 10.0.0.6     |
-| DiamondNet (ELK) | No | 10.1.0.5 |
+| DiamondNet (ELK) | Yes-Kibana | 10.1.0.5 |
 ### Elk Configuration
 Ansible was used to automate configuration of the ELK machine. No configuration was performed manually, which is advantageous because
 It allows for complete automatic maintenance and automation without any errors.
@@ -70,10 +70,12 @@ The playbook implements the following tasks:
 4. Increase Memory Usage: Within the elk YML the following task vm.max_map_count to 262144 should be inputed due to the ELK docker image having low memory.
 5. Download Image/Launch Elk: Downloads and initiates the container within the specified ports.
 The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.
-![TODO: Update the path with the name of your screenshot of docker ps output](Images/docker_ps_output.png)
+(Images/docker_ps_output.png)
 ### Target Machines & Beats
 This ELK server is configured to monitor the following machines:
-Web-1 10.0.0.5   & Web-2 10.0.0.6
+..* Web-1 10.0.0.5 
+..* Web-2 10.0.0.6
+..* ELK 10.1.0.5
 We have installed the following Beats on these machines:
  Filebeat and Metricbeat were installed on these two machines via YML playbook within the ansible container.
 These Beats allow us to collect the following information from each machine:
