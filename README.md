@@ -4,10 +4,10 @@ The files in this repository were used to configure the network depicted below.
 
 Project1-ELK/Diagram/Diagram.png
 
-1. These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the my-playbook file may be used to install only certain pieces of it, such as Filebeat.
-..*my-playbook.yml 
-***Filebeat-playbook.yml,
-***metricbeat-playbook.yml
+These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the my-playbook file may be used to install only certain pieces of it, such as Filebeat.
+my-playbook.yml 
+filebeat-playbook.yml,
+metricbeat-playbook.yml
 
 This document contains the following details:
 - Description of the Topology
@@ -20,15 +20,11 @@ This document contains the following details:
 ### Description of the Topology
 The main purpose of this network is to expose a load-balanced and monitored instance of DVWA, the D*mn Vulnerable Web Application.
 Load balancing ensures that the application will be highly available, in addition to restricting access to the network.
-
-What aspect of security do load balancers protect?
 Load balancers ensure availability and protect against DDos allowing traffic to be distributed evenly across the network.
- What is the advantage of a jump box? 
 Jumpbox secures all of the admins and requires only a single system update.
+
 Integrating an ELK server allows users to easily monitor the vulnerable VMs for changes to the jumpbox and system network.
-What does Filebeat watch for?
- Filebeat watches log events and collects them while forwarding it to the elasticsearch.
-What does Metricbeat record? 
+Filebeat watches log events and collects them while forwarding it to the elasticsearch.
 Metricbeat records and collects metrics from the operating system and sends the metrics and statistical information out to elasticsearch.
 
 The configuration details of each machine may be found below.
@@ -36,9 +32,9 @@ The configuration details of each machine may be found below.
 | Name   | Function | IP Address | Operating System |
 |----------|----------|------------|------------------|
 | Jump Box | Gateway | 10.0.0.4  | Linux      |
-| Web-1  | DvWA        | 10.0.0.5  | LINUX
-| Web-2  |    DvWA     | 10.0.0.6   | LINUX
-| DiamondNet  |  DvWA  | 10.1.0.5    | LINUX
+| Web-1  | DvWA        | 10.0.0.5  | Linux
+| Web-2  |    DvWA     | 10.0.0.6   | Linux
+| DiamondNet  |  DvWA  | 10.1.0.5    | Linux
 
 
 
@@ -46,14 +42,14 @@ The configuration details of each machine may be found below.
 ### Access Policies
 The machines on the internal network are not exposed to the public Internet. 
 Only the JUMPBOX machine can accept connections from the Internet. Access to this machine is only allowed from the following IP addresses:
-Personal IP address & 10.0.0.4
+Personal IP address.
 Machines within the network can only be accessed by SSH.
-The Jumobox allows access to the ELK VM, with the IP address  10.0.0.4.
+The Jumobox allows access to the ELK VM, with the IP address: 10.0.0.4.
 The JumpBox & 10.0.0.4
 A summary of the access policies in place can be found in the table below.
 | Name   | Publicly Accessible | Allowed IP Addresses |
 |----------|---------------------|----------------------|
-| Jump Box | No       | 10.0.0.4  |
+| Jump Box | Yes       | 10.0.0.4  |
 | Web-1     |     No     |   10.0.0.5   |
 |  Web-2   |      No     | 10.0.0.6     |
 | DiamondNet (ELK) | Yes-Kibana | 10.1.0.5 |
@@ -74,11 +70,11 @@ The following screenshot displays the result of running `docker ps` after succes
 (Images/docker_ps_output.png)
 ### Target Machines & Beats
 This ELK server is configured to monitor the following machines:
-..*Web-1 10.0.0.5 
-..*Web-2 10.0.0.6
-..*ELK 10.1.0.5
+Web-1 10.0.0.5 
+Web-2 10.0.0.6
+ELK 10.1.0.5
 We have installed the following Beats on these machines:
- Filebeat and Metricbeat were installed on these two machines via YML playbook within the ansible container.
+Filebeat and Metricbeat were installed on these two machines via YML playbook within the ansible container.
 These Beats allow us to collect the following information from each machine:
 Metricbeat collects data from the operating system metrics such as CPU, memory, data connected to services running on the server. While filebeat can audit, monitor server logs and collect all other log events within the server. Both utilize powerful tools to monitor traffic and collect data to protect the servers.
 ### Using the Playbook
