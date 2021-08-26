@@ -73,7 +73,9 @@ The following screenshot displays the result of running `docker ps` after succes
 ![TODO: Update the path with the name of your screenshot of docker ps output](Images/docker_ps_output.png)
 ### Target Machines & Beats
 This ELK server is configured to monitor the following machines:
-Web-1 10.0.0.5   & Web-2 10.0.0.6
+Web-1 10.0.0.5  
+Web-2 10.0.0.6
+ELK 
 We have installed the following Beats on these machines:
  Filebeat and Metricbeat were installed on these two machines via YML playbook within the ansible container.
 These Beats allow us to collect the following information from each machine:
@@ -85,10 +87,10 @@ SSH into the control node and follow the steps below:
 - Update the hosts file to include the group [elk] and the destination IP address.
 - Run the playbook, and navigate to http://[your.VM.IP]:5601/app/kibana to check that the installation worked as expected.
 
-Which file is the playbook? The roles file is the playbook and you copy it to.. Where do you copy it?_
 The roles file is the file where you can find the playbook and it can be copied to /etc/ansible/roles/install-elk.yml.
 
-The file you uppdate to make Ansible run the playbook on a specific machine is the hosts file. 
+The file you update to make Ansible run the playbook on a specific machine is the hosts file, here you can specify which machine you want the elk server on by running the proper command within the hosts text file by entering the destination IP address.  
+![image](https://user-images.githubusercontent.com/83889228/131012760-dcbe8203-ad1f-46e4-9f2c-077db180aced.png)
 
 You can also specify the machine to install the elk server on filebeat/metricbeat by installing filebeat/metricbeat configuration file and adjusting the host to the destination IP address. These configuration files can be found by following this path /etc/ansible/filebeat-config.yml or /etc/ansible/metricbeat-config.yml. 
 
