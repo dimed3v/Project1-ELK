@@ -46,7 +46,7 @@ Only the JUMPBOX machine can accept connections from the Internet. Access to thi
 - Personal IP address.
 Machines within the network can only be accessed by SSH.
 The Jumpbox allows access to the ELK VM, with the IP address: 10.0.0.4.
-- 10.0.0.4
+
 A summary of the access policies in place can be found in the table below.
 | Name   | Publicly Accessible | Allowed IP Addresses |
 |----------|---------------------|----------------------|
