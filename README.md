@@ -86,7 +86,6 @@ SSH into the control node and follow the steps below:
 - Update the hosts file to include the group [elk] and the destination IP address.
 - Run the playbook, and navigate to http://[your.VM.IP]:5601/app/kibana to check that the installation worked as expected.
 
-Which file is the playbook? The roles file is the playbook and you copy it to.. Where do you copy it?_
 The roles file is the file where you can find the playbook and it can be copied to /etc/ansible/roles/install-elk.yml.
 
 The file you uppdate to make Ansible run the playbook on a specific machine is the hosts file. 
