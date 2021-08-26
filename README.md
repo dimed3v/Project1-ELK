@@ -95,7 +95,5 @@ SSH into the control node and follow the steps below:
 You can also specify the machine to install the elk server on filebeat/metricbeat by installing filebeat/metricbeat configuration file and adjusting the host to the destination IP address. These configuration files can be found by following this path /etc/ansible/filebeat-config.yml or /etc/ansible/metricbeat-config.yml. 
 
 
-Which URL do you navigate to in order to check that the ELK server is running?
-
- http://[your.VM.IP]:5601/app/kibana
+The URL you navigate to in order to check that the ELK server is running is: http://[your.VM.IP]:5601/app/kibana
 
