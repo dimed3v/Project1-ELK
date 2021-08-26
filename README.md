@@ -68,7 +68,8 @@ The playbook implements the following tasks:
 4. Increase Memory Usage: Within the elk YML the following task vm.max_map_count to 262144 should be inputed due to the ELK docker image having low memory.
 5. Download Image/Launch Elk: Downloads and initiates the container within the specified ports.
 The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.
-(Images/docker_ps_output.png)
+![image](https://user-images.githubusercontent.com/83889228/131019879-374a7177-a589-4873-af35-72433ace2716.png)
+
 ### Target Machines & Beats
 This ELK server is configured to monitor the following machines:
 Web-1 10.0.0.5 
