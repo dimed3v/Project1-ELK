@@ -85,20 +85,13 @@ These installed files allow us to collect the following information from each ma
 ### Using the Playbook
 In order to use the playbook, you will need to have an Ansible control node already configured. Assuming you have such a control node provisioned: 
 SSH into the control node and follow the steps below:
-- Copy the install-elk.yml file to /etc/ansible/roles/install-elk.yml .
-- Update the hosts file to include the group [elk] and the destination IP address.
-- Run the playbook, and navigate to http://[your.VM.IP]:5601/app/kibana to check that the installation worked as expected.
-
-- The roles file is the file where you can find the playbook and it can be copied to /etc/ansible/roles/install-elk.yml.
-
-- The file you update to make Ansible run the playbook on a specific machine is the [hosts file](https://github.com/dimed3v/Project1-ELK/blob/cfc2e6e0636616a8455f891dce454719c3672753/Ansible/hosts-file.txt) 
+- Copy the install-elk.yml file to /etc/ansible/roles .
+- Update the [hosts](https://github.com/dimed3v/Project1-ELK/blob/cfc2e6e0636616a8455f891dce454719c3672753/Ansible/hosts-file.txt) file to include the group [elk] and the destination IP address.
 - As shown in the example below:
 ![image](https://user-images.githubusercontent.com/83889228/131023515-1e988573-36f7-4c9d-bd13-c43d299f3ffb.png)
-
-
+- Run the playbook, and navigate to http://[your.VM.IP]:5601/app/kibana to check that the installation worked as expected.
 
 You can also specify the machine to install the elk server on filebeat/metricbeat by installing filebeat/metricbeat configuration file and adjusting the host to the destination IP address. These configuration files can be found by following this path /etc/ansible/filebeat-config.yml or /etc/ansible/metricbeat-config.yml. 
 
 
-The URL you navigate to in order to check that the ELK server is running is: http://[your.VM.IP]:5601/app/kibana
 
