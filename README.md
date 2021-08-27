@@ -32,7 +32,7 @@ The configuration details of each machine may be found below.
 
 | Name   | Function | IP Address | Operating System |
 |----------|----------|------------|------------------|
-| Jump Box | Gateway | 10.0.0.4  | Linux      |
+| Jump Box | Gateway | Personal IP | Linux      |
 | Web-1  | DvWA        | 10.0.0.5  | Linux
 | Web-2  |    DvWA     | 10.0.0.6   | Linux
 | DiamondNet (ELK)  |  ELK  | 10.1.0.5    | Linux
@@ -49,7 +49,7 @@ The machines on the internal network are not exposed to the public Internet. Onl
 A summary of the access policies in place can be found in the table below.
 | Name   | Publicly Accessible | Allowed IP Addresses |
 |----------|---------------------|----------------------|
-| Jump Box | Yes       | 10.0.0.4  |
+| Jump Box | Yes       | Personal IP  |
 | Web-1     |     No     |   10.0.0.5   |
 |  Web-2   |      No     | 10.0.0.6     |
 | DiamondNet (ELK) | Yes-Kibana | 10.1.0.5 |
