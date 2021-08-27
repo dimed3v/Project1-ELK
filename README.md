@@ -8,7 +8,7 @@ Project1-ELK/Diagram/Diagram.png
 These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the my-playbook file may be used to install only certain pieces of it, such as Filebeat.
 - my-playbook.yml 
 - filebeat-playbook.yml,
-- metricbeat-playbook.yml
+- [metricbeat-playbook.yml](https://github.com/dimed3v/Project1-ELK/blob/5d089c2fc5ec01e066b849d060a8a7462575232d/Ansible/metricbeat-playbook.yml) 
 
 This document contains the following details:
 - Description of the Topology
