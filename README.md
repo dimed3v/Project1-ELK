@@ -9,6 +9,7 @@ These files have been tested and used to generate a live ELK deployment on Azure
 - [install-elk playbook.yml](https://github.com/dimed3v/Project1-ELK/blob/94898de887f03d6f30273f56e9b0fa470efdddc4/Ansible/install-elk.yml) 
 - [filebeat-playbook.yml](https://github.com/dimed3v/Project1-ELK/blob/fe7f3fb3ec92c117f82a9e4ae6eff948e7622bd7/Ansible/filebeat-playbook.yml)
 - [metricbeat-playbook.yml](https://github.com/dimed3v/Project1-ELK/blob/5d089c2fc5ec01e066b849d060a8a7462575232d/Ansible/metricbeat-playbook.yml) 
+- [DvWA](https://github.com/dimed3v/Project1-ELK/blob/b78a1ccdea8a47a5ea48eb324acf0dd1ea3a87d9/Ansible/dvwa.yml)
 
 This document contains the following details:
 - Description of the Topology
