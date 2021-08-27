@@ -35,7 +35,7 @@ The configuration details of each machine may be found below.
 | Jump Box | Gateway | 10.0.0.4  | Linux      |
 | Web-1  | DvWA        | 10.0.0.5  | Linux
 | Web-2  |    DvWA     | 10.0.0.6   | Linux
-| DiamondNet  |  DvWA  | 10.1.0.5    | Linux
+| DiamondNet (ELK)  |  ELK  | 10.1.0.5    | Linux
 
 
 
