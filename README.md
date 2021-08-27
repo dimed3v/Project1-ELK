@@ -91,8 +91,10 @@ SSH into the control node and follow the steps below:
 
 - The roles file is the file where you can find the playbook and it can be copied to /etc/ansible/roles/install-elk.yml.
 
-- The file you update to make Ansible run the playbook on a specific machine is the hosts file. As shown in the example below:
+- The file you update to make Ansible run the playbook on a specific machine is the [hosts file](https://github.com/dimed3v/Project1-ELK/blob/cfc2e6e0636616a8455f891dce454719c3672753/Ansible/hosts-file.txt) 
+- As shown in the example below:
 ![image](https://user-images.githubusercontent.com/83889228/131023515-1e988573-36f7-4c9d-bd13-c43d299f3ffb.png)
+
 
 
 You can also specify the machine to install the elk server on filebeat/metricbeat by installing filebeat/metricbeat configuration file and adjusting the host to the destination IP address. These configuration files can be found by following this path /etc/ansible/filebeat-config.yml or /etc/ansible/metricbeat-config.yml. 
