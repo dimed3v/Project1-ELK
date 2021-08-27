@@ -4,7 +4,7 @@ The files in this repository were used to configure the network depicted below.
 
 ![image](https://github.com/dimed3v/Project1-ELK/blob/d2926840e1e6ae4073a5c8f828672fe8ee8ce7ac/Diagram/Diagram.png)
 
-These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the my-playbook file may be used to install only certain pieces of it, such as Filebeat.
+These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the playbook file may be used to install only certain pieces of it, such as Filebeat.
 - [install-elk playbook.yml](https://github.com/dimed3v/Project1-ELK/blob/94898de887f03d6f30273f56e9b0fa470efdddc4/Ansible/install-elk.yml) 
 - [filebeat-playbook.yml](https://github.com/dimed3v/Project1-ELK/blob/fe7f3fb3ec92c117f82a9e4ae6eff948e7622bd7/Ansible/filebeat-playbook.yml)
 - [metricbeat-playbook.yml](https://github.com/dimed3v/Project1-ELK/blob/5d089c2fc5ec01e066b849d060a8a7462575232d/Ansible/metricbeat-playbook.yml) 
