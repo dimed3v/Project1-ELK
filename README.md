@@ -6,9 +6,9 @@ Project1-ELK/Diagram/Diagram.png
 ![image](https://user-images.githubusercontent.com/83889228/131019810-6c5ff6b3-5cce-4b08-ab6d-e17e2879c947.png)
 
 These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the my-playbook file may be used to install only certain pieces of it, such as Filebeat.
-- my-playbook.yml 
-- filebeat-playbook.yml,
-- metricbeat-playbook.yml
+- [install-elk playbook.yml](https://github.com/dimed3v/Project1-ELK/blob/94898de887f03d6f30273f56e9b0fa470efdddc4/Ansible/install-elk.yml) 
+- [filebeat-playbook.yml](https://github.com/dimed3v/Project1-ELK/blob/fe7f3fb3ec92c117f82a9e4ae6eff948e7622bd7/Ansible/filebeat-playbook.yml)
+- [metricbeat-playbook.yml](https://github.com/dimed3v/Project1-ELK/blob/5d089c2fc5ec01e066b849d060a8a7462575232d/Ansible/metricbeat-playbook.yml) 
 
 This document contains the following details:
 - Description of the Topology
@@ -91,8 +91,10 @@ SSH into the control node and follow the steps below:
 
 - The roles file is the file where you can find the playbook and it can be copied to /etc/ansible/roles/install-elk.yml.
 
-- The file you update to make Ansible run the playbook on a specific machine is the hosts file. As shown in the example below:
+- The file you update to make Ansible run the playbook on a specific machine is the [hosts file](https://github.com/dimed3v/Project1-ELK/blob/cfc2e6e0636616a8455f891dce454719c3672753/Ansible/hosts-file.txt) 
+- As shown in the example below:
 ![image](https://user-images.githubusercontent.com/83889228/131023515-1e988573-36f7-4c9d-bd13-c43d299f3ffb.png)
+
 
 
 You can also specify the machine to install the elk server on filebeat/metricbeat by installing filebeat/metricbeat configuration file and adjusting the host to the destination IP address. These configuration files can be found by following this path /etc/ansible/filebeat-config.yml or /etc/ansible/metricbeat-config.yml. 
