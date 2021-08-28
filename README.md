@@ -20,13 +20,15 @@ This document contains the following details:
 
 ### Description of the Topology
 The main purpose of this network is to expose a load-balanced and monitored instance of DVWA, the D*mn Vulnerable Web Application.
-- Load balancing ensures that the application will be highly available, in addition to restricting access to the network.
-- Load balancers ensure availability and protect against DDos allowing traffic to be distributed evenly across the network.
-Jumpbox secures all of the admins and requires only a single system update.
+
+Load balancing ensures that the application will be highly available, in addition to restricting access to the network.
+- _The JumpBox server os a gateway gaining access can be done remotely, primarly by ssh using a verified key with access._
+- _Load balancers ensure availability and protect against DDos allowing traffic to be distributed evenly across the network.
+Jumpbox secures all of the admins and requires only a single system update._
 
 Integrating an ELK server allows users to easily monitor the vulnerable VMs for changes to the jumpbox and system network.
-- Filebeat watches log events and collects them while forwarding it to the elasticsearch.
-- Metricbeat records and collects metrics from the operating system and sends the metrics and statistical information out to elasticsearch.
+- _Filebeat watches system log events and collects them while forwarding it to the elasticsearch._
+- _Metricbeat records and collects metrics from the operating system and sends the metrics and statistical information out to elasticsearch._
 
 The configuration details of each machine may be found below.
 
@@ -44,7 +46,8 @@ The configuration details of each machine may be found below.
 The machines on the internal network are not exposed to the public Internet. Only the JUMPBOX machine can accept connections from the Internet.
 
 - Access to this machine is only allowed from the following IP addresses: Personal IP address.
-- Machines within the network can only be accessed by SSH. The Jumpbox allows access to the ELK VM, with the IP address: 10.0.0.4.
+- Machines within the network can only be accessed by SSH. The Jumpbox allows access to the ELK VM, with the IP address: 
+  - 10.0.0.4.
 
 A summary of the access policies in place can be found in the table below.
 | Name   | Publicly Accessible | Allowed IP Addresses |
