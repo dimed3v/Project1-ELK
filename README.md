@@ -95,5 +95,5 @@ SSH into the control node and follow the steps below:
 
 _As a **Bonus**, provide the specific commands the user will need to run to download the playbook, update the files, etc._
 - Within the JumpBox Provisioner run the following command to get/install the Elk playbook:
-  - `Curl https://github.com/dimed3v/Project1-ELK/blob/f92dd415459a8d6fc9c0329f0f299ea8087b1882/Ansible/install-elk.yml > /etc/ansible/roles/elk_install.yml`
+  - `Curl` (https://github.com/dimed3v/Project1-ELK/blob/f92dd415459a8d6fc9c0329f0f299ea8087b1882/Ansible/install-elk.yml) > /etc/ansible/roles/elk_install.yml
 
