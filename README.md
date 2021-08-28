@@ -22,7 +22,7 @@ This document contains the following details:
 The main purpose of this network is to expose a load-balanced and monitored instance of DVWA, the D*mn Vulnerable Web Application.
 
 Load balancing ensures that the application will be highly available, in addition to restricting access to the network.
-- _The JumpBox server is a gateway gaining access can be done remotely, primarly by ssh using a verified key with access._
+- _The JumpBox server is a gateway gaining access can be done remotely, primarly by using ssh with a verified key with accesss. 
 - _Load balancers ensure availability and protect against DDos allowing traffic to be distributed evenly across the network.
 Jumpbox secures all of the admins and requires only a single system update._
 
