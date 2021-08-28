@@ -75,9 +75,9 @@ The following screenshot displays the result of running `docker ps` after succes
 
 ### Target Machines & Beats
 This ELK server is configured to monitor the following machines:
-- Web-1 10.0.0.5 
-- Web-2 10.0.0.6
-- ELK 10.1.0.5
+- Web-1: 10.0.0.5 
+- Web-2: 10.0.0.6
+- ELK: 10.1.0.5
 
 - We have installed the following Beats on these machines:
 Filebeat and Metricbeat installed via YML playbook within the ansible container.
