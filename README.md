@@ -91,9 +91,19 @@ SSH into the control node and follow the steps below:
 - Update the [hosts](https://github.com/dimed3v/Project1-ELK/blob/cfc2e6e0636616a8455f891dce454719c3672753/Ansible/hosts-file.txt) file to include the group [elk] and the destination IP address.
 - As shown in the example below:
 ![image](https://user-images.githubusercontent.com/83889228/131023515-1e988573-36f7-4c9d-bd13-c43d299f3ffb.png)
-- Run the playbook, and navigate to http://[your.VM.IP]:5601/app/kibana to check that the installation worked as expected.
+- Run the playbook, and navigate to http://[your.elkVM.IP]:5601/app/kibana to check that the installation worked as expected.
+- If successful the kibana webpage should display like so: 
+  - ![image](https://user-images.githubusercontent.com/83889228/131222401-7757c92e-6635-4f5c-9307-18d6ad7861a2.png)
+
 
 _As a **Bonus**, provide the specific commands the user will need to run to download the playbook, update the files, etc._
-- Within the JumpBox Provisioner run the following command to get/install the Elk playbook:
-  - `Curl` (https://github.com/dimed3v/Project1-ELK/blob/f92dd415459a8d6fc9c0329f0f299ea8087b1882/Ansible/install-elk.yml) > /etc/ansible/roles/elk_install.yml
-
+- First within the JumpBox Provisioner run the following command to get/install the Elk playbook:
+  - `Curl` https://github.com/dimed3v/Project1-ELK/blob/f92dd415459a8d6fc9c0329f0f299ea8087b1882/Ansible/install-elk.yml > /etc/ansible/roles/install-elk.yml
+- Next, edit the hosts file in /etc/ansible/ with the provided information below:
+  - ![image](https://user-images.githubusercontent.com/83889228/131221997-5fb8cdc0-1eef-46e9-946a-c75576e3c89e.png)
+- Next, you will run the playbook by running the following command:
+  - `ansible-playbook install-elk.yml`
+- Following the install of your elk playbook, check that the elk installation works by going to the browser:
+  - http://[your.elkVM.IP]:5601/app/kibana
+  - ![image](https://user-images.githubusercontent.com/83889228/131222401-7757c92e-6635-4f5c-9307-18d6ad7861a2.png)
+- 
