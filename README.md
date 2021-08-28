@@ -80,7 +80,7 @@ This ELK server is configured to monitor the following machines:
 - ELK: 10.1.0.5
 
 - We have installed the following Beats on these machines:
-  - Filebeat and Metricbeat installed via YML playbook within the ansible container.
+  - Filebeat and Metricbeat installed via YML playbook.
 
 These installed files allow us to collect the following information from each machine:
 - Metricbeat collects data from the operating system metrics such as CPU, memory, and data connected to services running on the server. 
