@@ -117,4 +117,4 @@ _As a **Bonus**, provide the specific commands the user will need to run to down
    - `curl` https://github.com/dimed3v/Project1-ELK/blob/5f1ada2c752500f9aaa7a5144a74423c2797496e/Ansible/metricbeat-playbook.yml > /etc/ansible/roles/metricbeat-playbook.yml
    - The image below is the information that should be displayed: 
    - ![image](https://user-images.githubusercontent.com/83889228/131222954-310c8018-cd5e-46bc-a768-4099f27c4f15.png)
-- _ After all these steps are completed, you should now have access to filebeat data and metricbeat data within the kibana UI._
+- _After all these steps are completed, you should now have access to filebeat data and metricbeat data within the kibana UI._
