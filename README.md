@@ -59,9 +59,9 @@ A summary of the access policies in place can be found in the table below.
 | DiamondNet (ELK) | Yes-Kibana | 10.1.0.5 |
 ### Elk Configuration
 Ansible was used to automate configuration of the ELK machine. No configuration was performed manually, which is advantageous because...
-- _It allows for complete automatic maintenance and automation to help reduce any errors_
-- _What is the main advantage of automating configuration with Ansible?_ 
-  - Allows admins to automate multiple complex IT tasks.
+- _It allows for complete automatic maintenance and automation to help reduce any errors._
+- What is the main advantage of automating configuration with Ansible? 
+  - _Allows admins to automate multiple complex IT tasks._
 
 The playbook implements the following tasks:
 
