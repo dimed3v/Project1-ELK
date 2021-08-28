@@ -97,6 +97,7 @@ SSH into the control node and follow the steps below:
 
 
 _As a **Bonus**, provide the specific commands the user will need to run to download the playbook, update the files, etc._
+### Installing Elk to Navigate Kibana
 - First within the JumpBox Provisioner run the following command to get/install the Elk playbook:
   - `Curl` https://github.com/dimed3v/Project1-ELK/blob/f92dd415459a8d6fc9c0329f0f299ea8087b1882/Ansible/install-elk.yml > /etc/ansible/roles/install-elk.yml
 - Next, edit the hosts file in /etc/ansible/ with the provided information below:
@@ -106,4 +107,8 @@ _As a **Bonus**, provide the specific commands the user will need to run to down
 - Following the install of your elk playbook, check that the elk installation works by going to the browser:
   - http://[your.elkVM.IP]:5601/app/kibana
   - ![image](https://user-images.githubusercontent.com/83889228/131222401-7757c92e-6635-4f5c-9307-18d6ad7861a2.png)
-- 
+### Installing FileBeat
+- Download the playbook by running:
+  - `curl` https://github.com/dimed3v/Project1-ELK/blob/301edaf377d04219e42e63cc06ff2e645d480a8e/Ansible/filebeat-playbook.yml > /etc/ansible/roles/filebeat-playbook.yml 
+  - Below is the image with the information that should be displayed:
+  - ![image](https://user-images.githubusercontent.com/83889228/131222755-66a1b00f-e73b-485d-8c76-0edde59254e5.png)
