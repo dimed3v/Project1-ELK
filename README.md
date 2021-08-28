@@ -22,7 +22,7 @@ This document contains the following details:
 The main purpose of this network is to expose a load-balanced and monitored instance of DVWA, the D*mn Vulnerable Web Application.
 
 Load balancing ensures that the application will be highly available, in addition to restricting access to the network.
-- _The JumpBox server os a gateway gaining access can be done remotely, primarly by ssh using a verified key with access._
+- _The JumpBox server is a gateway gaining access can be done remotely, primarly by ssh using a verified key with access._
 - _Load balancers ensure availability and protect against DDos allowing traffic to be distributed evenly across the network.
 Jumpbox secures all of the admins and requires only a single system update._
 
@@ -45,22 +45,23 @@ The configuration details of each machine may be found below.
 ### Access Policies
 The machines on the internal network are not exposed to the public Internet. Only the JUMPBOX machine can accept connections from the Internet.
 
-- Access to this machine is only allowed from the following IP addresses: Personal IP address.
-- Machines within the network can only be accessed by SSH. The Jumpbox allows access to the ELK VM, with the IP address: 
-  - 10.0.0.4.
+- Access to this machine is only allowed from the following IP addresses: 
+- _Personal IP address (of the JumpBox)._
+- Machines within the network can only be accessed by SSH. The Jumpbox allows access to the ELK VM, with the following IP address: 
+  - _10.0.0.4._
 
 A summary of the access policies in place can be found in the table below.
 | Name   | Publicly Accessible | Allowed IP Addresses |
 |----------|---------------------|----------------------|
-| Jump Box | Yes       | Personal IP  |
+| Jump Box | Yes-SSH       | Personal IP  |
 | Web-1     |     No     |   10.0.0.5   |
 |  Web-2   |      No     | 10.0.0.6     |
 | DiamondNet (ELK) | Yes-Kibana | 10.1.0.5 |
 ### Elk Configuration
-Ansible was used to automate configuration of the ELK machine. No configuration was performed manually, which is advantageous because
-It allows for complete automatic maintenance and automation without any errors.
-What is the main advantage of automating configuration with Ansible? 
-Allows admins to automate multiple complex IT tasks.
+Ansible was used to automate configuration of the ELK machine. No configuration was performed manually, which is advantageous because...
+- _It allows for complete automatic maintenance and automation to help reduce any errors_
+The main advantage of automating configuration with Ansible? 
+  - Allows admins to automate multiple complex IT tasks.
 
 The playbook implements the following tasks:
 
