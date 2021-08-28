@@ -96,6 +96,14 @@ In order to use the playbook, you will need to have an Ansible control node alre
 - If successful the kibana webpage should display like so: 
   - ![image](https://user-images.githubusercontent.com/83889228/131222401-7757c92e-6635-4f5c-9307-18d6ad7861a2.png)
 
+Answer the following questions to fill in the blanks:
+
+- Which file is the playbook? Where do you copy it?
+  - The file for the filebeat playbook is filebeat-playbook.yml, and should be copied to the following path: /etc/filebeat. 
+  - The file for the metricbeat playbook is metricbeat-playbook.yml, and should be copied to the following path: /etc/metricbeat.
+
+- Which file do you update to make Ansible run the playbook on a specific machine? How do I specify which machine to install the ELK server on versus which to install Filebeat on?
+  - You update the /etc/ansible/hosts file to make the Ansible run on a specific machine. You update each playbook file (metric, filebeat etc..) and edit the hosts line by replacing the IP address to specify what machines the playbook runs on.
 
 _As a **Bonus**, provide the specific commands the user will need to run to download the playbook, update the files, etc._
 ### Installing Elk to Navigate Kibana
