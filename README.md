@@ -80,13 +80,14 @@ This ELK server is configured to monitor the following machines:
 - ELK: 10.1.0.5
 
 - We have installed the following Beats on these machines:
-Filebeat and Metricbeat installed via YML playbook within the ansible container.
+  - Filebeat and Metricbeat installed via YML playbook within the ansible container.
 
 These installed files allow us to collect the following information from each machine:
-- Metricbeat collects data from the operating system metrics such as CPU, memory, and data connected to services running on the server. While filebeat can audit, monitor server logs and collect all other log events within the server. Both utilize powerful tools to monitor traffic and collect data to protect the servers.
+- Metricbeat collects data from the operating system metrics such as CPU, memory, and data connected to services running on the server. 
+- While filebeat can audit, monitor server logs and collect all other log events within the server. Both utilize powerful tools to monitor traffic and collect data to protect the servers.
 ### Using the Playbook
 In order to use the playbook, you will need to have an Ansible control node already configured. Assuming you have such a control node provisioned: 
-SSH into the control node and follow the steps below:
+- _SSH into the control node and follow the steps below..._ 
 - Copy the install-elk.yml file to /etc/ansible/roles .
 - Update the [hosts](https://github.com/dimed3v/Project1-ELK/blob/cfc2e6e0636616a8455f891dce454719c3672753/Ansible/hosts-file.txt) file to include the group [elk] and the destination IP address.
 - As shown in the example below:
