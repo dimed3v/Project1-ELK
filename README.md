@@ -112,3 +112,8 @@ _As a **Bonus**, provide the specific commands the user will need to run to down
   - `curl` https://github.com/dimed3v/Project1-ELK/blob/301edaf377d04219e42e63cc06ff2e645d480a8e/Ansible/filebeat-playbook.yml > /etc/ansible/roles/filebeat-playbook.yml 
   - Below is the image with the information that should be displayed:
   - ![image](https://user-images.githubusercontent.com/83889228/131222755-66a1b00f-e73b-485d-8c76-0edde59254e5.png)
+ ### Installing MetricBeat
+ - Download the playbook by running: 
+   - `curl` https://github.com/dimed3v/Project1-ELK/blob/5f1ada2c752500f9aaa7a5144a74423c2797496e/Ansible/metricbeat-playbook.yml > /etc/ansible/roles/metricbeat-playbook.yml
+   - Below is the image with the information that should be displayed: 
+   - ![image](https://user-images.githubusercontent.com/83889228/131222954-310c8018-cd5e-46bc-a768-4099f27c4f15.png)
