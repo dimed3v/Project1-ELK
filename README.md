@@ -43,7 +43,7 @@ The configuration details of each machine may be found below.
 
 
 ### Access Policies
-The machines on the internal network are not exposed to the public Internet. Only the JUMPBOX machine can accept connections from the Internet.
+The machines on the internal network are not exposed to the public Internet. Only the Jumpbox machine can accept connections from the Internet.
 
 - Access to this machine is only allowed from the following IP addresses: 
   - _Personal IP address (of the JumpBox)._
