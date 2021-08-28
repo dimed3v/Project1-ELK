@@ -14,8 +14,8 @@ This document contains the following details:
 - Description of the Topology
 - Access Policies
 - ELK Configuration
-- Beats in Use
-- Machines Being Monitored
+-- Beats in Use
+-- Machines Being Monitored
 - How to Use the Ansible Build
 
 ### Description of the Topology
@@ -56,7 +56,7 @@ A summary of the access policies in place can be found in the table below.
 ### Elk Configuration
 Ansible was used to automate configuration of the ELK machine. No configuration was performed manually, which is advantageous because
 It allows for complete automatic maintenance and automation without any errors.
- What is the main advantage of automating configuration with Ansible? 
+What is the main advantage of automating configuration with Ansible? 
 Allows admins to automate multiple complex IT tasks.
 
 The playbook implements the following tasks:
